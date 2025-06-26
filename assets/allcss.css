@@ -1,0 +1,276 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8DC;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #5C4033;
+}
+
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 20px;
+    color: #5C4033;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 17px;
+    text-align: center;
+    margin: 10px;
+    color: #5C4033;
+}
+
+p {
+    color: #5C4033;
+    padding: 0px 20px 30px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+li {
+    color: #5C4033;
+    list-style-type: none;
+    font-size: 13px;
+    margin: 10px 0px 0px 10px;
+}
+
+td {
+    font-size: 13px;
+    margin: 5px 10px;
+    padding: 10px 10px;
+    color: #5C4033;
+}
+
+
+th{
+    color: #5C4033;
+}
+
+img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 25vw;
+    border-radius: 50%;
+}
+
+.horta {
+    text-align: center;
+}
+
+.content-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para Telas Menores (Mobile First) */
+body {
+    width: 100%;
+}
+
+header {
+    background-color: #8FBC8F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+header h2 {
+    width: auto;
+    font-size: 25px;
+    color: #5C4033;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background-color: #8FBC8F;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+section {
+    background-color: #8FBC8F;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.janelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5px 10px 40px 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+aside {
+    background-color: #8FBC8F;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+aside h3 {
+    padding: 20px;
+}
+
+.mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media Query para telas maiores (a partir de 768px) */
+@media screen and (min-width: 768px) {
+    body {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    header {
+        padding: 10px 50px;
+    }
+
+    .menu {
+        display: block;
+        position: static;
+        background: none;
+        border: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .menu a {
+        color: white;
+        padding: 0;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        color: #ddd;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    .janelas {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    aside {
+        width: 70%;
+    }
+
+    .mais {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+
+    li, td {
+        font-size: 16px;
+    }
+}
+
+/* Media Query adicional para telas ainda maiores */
+@media screen and (min-width: 1024px) {
+    body {
+        width: 80%;
+    }
+
+    section {
+        width: 75%;
+    }
+
+    aside {
+        width: 60%;
+    }
+}
