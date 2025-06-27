@@ -1,4 +1,13 @@
 /* Estilos Gerais */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+.titulo-central{
+    font-family: "Italiana", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
