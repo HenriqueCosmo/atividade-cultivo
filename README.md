@@ -1,4 +1,4 @@
-# atividade-cultivo
+
 # Projeto Acadêmico "Cultivo para Todos"
 Olá! Este é o repositório do projeto Cultivo para Todos, um site desenvolvido como parte de um projeto acadêmico na faculdade, focado em guiar entusiastas da jardinagem e iniciantes na criação e manutenção de hortas sustentáveis em casa.
 
